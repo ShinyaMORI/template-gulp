@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'zozoFont';
+  src: url('/fonts/zozogothic/zozogothic-bold.woff2'),
+       url('/fonts/zozogothic/zozogothic-bold.woff'),
+       url('/fonts/zozogothic/zozogothic-bold.ttf');
+}
+
+@mixin zozofont() {
+  font-family: 'zozoFont';
+}
+
+.zozofont {
+  @include zozofont;
+}

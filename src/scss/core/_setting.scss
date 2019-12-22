@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// color setting
+$defaultBgColor: 	#000;
+$defaultSectionBgColor: #0f0f0f;
+$defaultTxtColor: 	#000;
+$defaultLinkColor: 	#000;
+$defaultLinkVisitedColor: #000;
+$defaultLinkHoverColor: #000;
+
+// font size
+$defaultTxtSize: 1.4em;
+
+// fixed width
+$fixedWidth: 900px;
+
+// media query smartphone
+$breakSmSp: "screen and (min-width: 0px) and (max-width: 374px)";
+
+// media query smartphone
+$breakSp: "screen and (min-width: 0px) and (max-width: 767px)";
+
+// media query pc
+$breakPc: "screen and (min-width: 768px)";
+
+$breakSm: "screen and (min-width: 0px) and (max-width: 320px)";
+
+// line height
+$lineHeight: 1.5;

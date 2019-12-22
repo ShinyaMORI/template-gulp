@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// clearfix
+@mixin clearfix() {
+	*zoom: 1;
+
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+}
+
+//media query for small smartphone
+@mixin viewSmSp {
+	@media #{$breakSmSp} {
+		@content;
+	}
+}
+
+// media query for smartphone
+@mixin viewSp {
+	@media #{$breakSp} {
+		@content;
+	}
+}
+
+// media query for tablet
+@mixin viewPc {
+	@media #{$breakPc} {
+		@content;
+	}
+}
+
+@mixin viewSm {
+	@media #{$breakSm} {
+		@content;
+	}
+}

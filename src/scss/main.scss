@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import "core/**";
+@import "modules/**";
+@import "layout/**";
+
+html {
+  font-size: 62.5%;
+  font-family: "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Verdana, sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-size: $defaultTxtSize;
+  line-height: $lineHeight;
+}
+
+/* link style */
+a:link {
+  color: $defaultLinkColor;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $defaultLinkVisitedColor;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $defaultLinkHoverColor;
+  text-decoration: underline;
+}
+
+.section-inner {
+  @include viewPc {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+}
+
+.view-sp {
+  @include viewPc {
+    display: none;
+  }
+}
+
+.view-pc {
+  display: none;
+  @include viewPc {
+    display: block;
+  }
+}
