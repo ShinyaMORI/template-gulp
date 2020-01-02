@@ -73,7 +73,7 @@ function htmls() {
     }))
     .pipe(rev.manifest())
 
-  return src(['./src/pug/**/*.pug' '!./src/pug/include/*.pug'])
+  return src(['./src/pug/**/*.pug','!./src/pug/include/*.pug'])
     .pipe(pug(pugOptions))
     .pipe(revRewrite({ manifest }))
     .pipe(dest('./dist'))
