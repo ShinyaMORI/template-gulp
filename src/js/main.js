@@ -1,6 +1,8 @@
-window.$ = window.jQuery = require('jquery');
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
+const init = () => {
+	console.log('Hallo!')
+}
 
-$(function(){
-	console.log('on');
-});
+window.addEventListener('load', init);

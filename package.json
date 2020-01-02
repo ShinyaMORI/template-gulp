@@ -32,7 +32,8 @@
   },
   "author": "",
   "dependencies": {
-    "@babel/runtime": "^7.4.5",
-    "jquery": "^3.4.0"
+    "@babel/runtime": "^7.7.7",
+    "core-js": "^3.6.1",
+    "gsap": "^3.0.4"
   }
 }
